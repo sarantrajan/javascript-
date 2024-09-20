@@ -1,0 +1,94 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: pink;
+    color: black;
+    border: aquamarine;
+    text-align: justify;
+    margin: auto;
+}
+.darkmode{
+    background-color: black;
+    color: white;
+}
+button{
+    float: right;
+    background-color: white;
+}
+table{
+    border-radius: 0%;
+    background-color: skyblue;
+    font-size: 20px;
+    border-style: dashed;
+}
+th{
+    color: red;
+}
+ul{
+    list-style-type: square;
+    display: inline-block;
+
+}
+ol{
+            
+    list-style-type: lower-roman;
+    display: inline-block;
+}
+img{
+    border-radius: 18px;
+    padding: 5px;
+    width: 150px;
+    border: 1px solid black;
+}
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+
+    .full {
+        grid-template-columns: 1fr; 
+        width: 100%;
+        background-color: transparent; 
+        position: relative;
+        right: 40px;
+        top: 0px;
+        /* Full width on small screens */
+    }
+
+    .left, .right {
+        padding: 15px;
+        width: 100%; /* Ensure the sections fill the screen */
+    }
+
+    .h2 {
+        font-size: 18px; /* Smaller heading font size */
+    }
+}
+
+/* Additional Responsive Styles for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .full {
+        grid-template-columns: 1fr; 
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .left, .right {
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+/* Responsive Styles for Larger Screens */
+@media (min-width: 1024px) {
+    .full {
+        grid-template-columns: 1fr 2fr; /* Adjust grid for larger screens */
+        max-width: 1100px; /* Set max-width for desktops */
+        padding: 30px;
+    }
+
+    .left, .right {
+        padding: 30px;
+    }
+}
